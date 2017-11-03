@@ -1,0 +1,11 @@
+repositories {
+  maven {
+    url "http://davearata.github.com/mavenrepo/repository"
+  }
+}
+
+dependencies {
+ compile 'com.scottyab:rootbeer-lib:0.0.6'
+
+
+}

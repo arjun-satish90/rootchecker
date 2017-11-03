@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-rootdetector",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-rootdetector",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "A cordova plugin to detect if the device is rooted or not"
+}

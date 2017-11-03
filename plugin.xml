@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="root_detector"
+    version="1.0.0">
+    <name>Cordova Root Detector</name>
+    <description></description>
+    <license>Apache 2.0</license>
+    <keywords></keywords>
+
+    <!-- android -->
+    <platform name="android">
+        <js-module src="www/plugin.js" name="plugin">
+            <runs/>
+            <clobbers target="rootDetector" />
+        </js-module>
+
+        <framework src="libs/rootDetector/root_detector.gradle" custom="true" type="gradleReference" />
+
+     
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="RootChecker">
+                <param name="android-package" value="com.example.RootChecker" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/com/example/RootChecker.java" target-dir="src/com/example/" />
+        
+    </platform>
+
+</plugin>
+
